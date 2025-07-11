@@ -15,7 +15,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/YOUR_CODE.js" crossorigin="anonymous"></script>
-    <link href="{{ asset('landingpage/assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/css.css') }}" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -34,6 +34,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('grayscale/js/scripts.js') }}"></script>
 </body>
-<script src="{{ asset('landingpage/assets/js/main.js') }}"></script>
+<script src="{{ asset('js/js.js') }}"></script>
 
 </html>

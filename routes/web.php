@@ -25,5 +25,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::middleware([])->group(function () {
+
+    Route::prefix('portfolio')->name('portfolio.')->group(function () {
+         Route::post('/add', [ProfileController::class, 'store'])->name('store');
+        Route::get('/create', [ProfileController::class, 'create'])->name('create');
+    });
+});
+Route::get('/api/portfolio-images/{category?}', [ProfileController::class, 'getImages']);
+
 
 require __DIR__.'/auth.php';
